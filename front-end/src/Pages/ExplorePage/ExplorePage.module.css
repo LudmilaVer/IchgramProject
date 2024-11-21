@@ -1,0 +1,45 @@
+/* ExplorePage.module.css */
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.cont_img {
+  width: 90%;
+  column-count: 3;
+  column-gap: 0.2rem;
+}
+
+.cont_img img {
+  width: 100%;
+  margin-bottom: 0.3rem;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 430px) {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 4% 0;
+  }
+  .cont_img {
+    width: 95%;
+    column-count: 2;
+    column-gap: 0.2rem;
+  }
+}

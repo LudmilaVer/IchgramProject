@@ -1,0 +1,126 @@
+.container {
+  width: 100%;
+  padding: 1.75rem 2rem 0 0.81rem;
+  display: flex;
+  flex-direction: column;
+}
+.container_li_img {
+  display: flex;
+  align-items: center;
+}
+.container_img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.avaImg {
+  width: 2.2rem;
+  max-height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--border-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileAvatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.container_list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.container_li {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+}
+.container_li:hover {
+  border-radius: 4px;
+  background-color: #ededed;
+}
+.container_li_text {
+  margin-left: 16px;
+  padding-top: 5px;
+}
+.container_li.active .container_li_text p {
+  font-weight: 800;
+}
+.ImgSmallScreen {
+  margin-top: 2rem;
+}
+.container_profile img {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  
+  
+  
+  .container_li_text {
+    display: none;
+  }
+  .container_img {
+    display: none;
+  }
+}
+@media (max-width: 430px) {
+  .containerCont {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    align-items: center;
+    padding-bottom: 1rem;
+    z-index: 5;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    overflow: hidden; 
+  }
+  .container_list {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    flex-direction: row;
+    gap: 0;
+  }
+  .container_li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    /* max-width: 50px; */
+  }
+  .container_profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0;
+    /* margin-right: 0.5rem; */
+  }
+  .hideOnSmallScreen {
+    display: none !important;
+  }
+  .container_li_img img {
+    min-height: 2rem;
+  }
+  .ImgSmallScreen {
+    margin-top: 0;
+  }
+  
+}

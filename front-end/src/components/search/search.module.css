@@ -1,0 +1,91 @@
+.search_inp {
+  width: 100%;
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  height: 40px;
+  margin-top: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+.search_inp input {
+  width: 100%;
+  background-color: transparent;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+}
+.search_inp input::placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 18.75px;
+  text-align: left;
+  color: #a8a8a8;
+
+}
+.search_inp button {
+  border: none;
+  margin-right: 10px;
+}
+.search_list {
+    width: 100%;
+}
+.search_li {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+.search_li:hover {
+  background-color: #efefef;
+  border-radius: 4px;
+}
+.notific_img{
+  max-width: 2.37rem;
+  max-height: 2.37rem;
+  overflow: hidden;
+  border-radius: 50%;
+
+}
+.notific_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.search_btn {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Затемненный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.searchContainer {
+  padding: 20px;
+}

@@ -1,0 +1,243 @@
+.LogIn_container {
+  margin: 0 auto; /* Центрирование контейнера по горизонтали */
+  max-width: 1550px; /* Максимальная ширина контейнера */
+  width: 100%; /* Занимает всю доступную ширину */
+  height: 100vh; /* Занимает всю высоту видимой области браузера */
+  display: flex; /* Используется для выравнивания дочерних элементов с помощью flexbox */
+  justify-content: center; /* Центрирует содержимое по горизонтали */
+  align-items: center; /* Центрирует содержимое по вертикали */
+  position: relative; /* Устанавливает позиционирование для корректной работы псевдоэлементов */
+  opacity: 1; /* Устанавливает начальную прозрачность */
+  transition: opacity 0.3s ease-in-out; /* Анимация изменения прозрачности */
+}
+
+/* Класс для анимации появления */
+.LogIn_container.fade-in {
+  opacity: 2;
+}
+
+/* Определение анимации с более длительным переходом */
+.fade-in {
+  opacity: 2;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loginbox {
+  display: flex; /* Устанавливает flexbox для контейнера */
+  gap: 34px; /* Расстояние между дочерними элементами */
+}
+
+/* Псевдоэлемент для создания фона */
+.LogIn_container::before {
+  content: ""; /* Пустой контент для создания декоративного элемента */
+  position: absolute; /* Абсолютное позиционирование внутри контейнера */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../images/png/Background111.png'); /* Фоновое изображение */
+  background-size: cover; /* Изображение покрывает всю область */
+  background-position: center; /* Центрирует фоновое изображение */
+  background-repeat: no-repeat; /* Изображение не повторяется */
+  opacity: 0.5; /* Прозрачность фона */
+  z-index: -1; /* Задает порядок наложения, чтобы фон был за основным контентом */
+}
+
+.inputbox {
+  display: flex; /* Использует flexbox */
+  flex-direction: column; /* Располагает элементы вертикально */
+}
+
+.LogIn_cont {
+  border: 1px solid #dbdbdb; /* Граница контейнера */
+  border-radius: 3px; /* Скругление углов */
+  box-shadow: 2px 2px 30px rgb(110, 110, 110); /* Тень для создания эффекта объема */
+  width: 350px; /* Ширина формы */
+  padding: 1.18rem 2.5rem; /* Внутренние отступы */
+  display: flex; /* Использует flexbox */
+  flex-direction: column; /* Располагает элементы вертикально */
+  align-items: center; /* Центрирует элементы по горизонтали */
+  margin-bottom: 10px; /* Отступ снизу */
+  background-color: #fff; /* Белый фон */
+}
+
+.Login_form {
+  width: 100%; /* Ширина формы */
+}
+
+.login_cont_inp {
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Расположение элементов вертикально */
+  gap: 8px; /* Расстояние между элементами */
+  margin-bottom: 14px; /* Отступ снизу */
+}
+
+.LogIn_cont_input {
+  width: 100%; /* Полная ширина */
+  max-width: 300px; /* Максимальная ширина */
+  display: flex; /* Flexbox */
+  align-items: center; /* Выравнивание по центру вертикали */
+  border: 1px solid #dbdbdb; /* Граница */
+  border-radius: 6px; /* Скругленные углы */
+  padding: 12px 79px; /* Внутренние отступы */
+  background-color: #fafafa; /* Светлый фон */
+  color: #c7c7c7; /* Цвет текста */
+}
+
+.LogIn_inp {
+  width: 100%; /* Полная ширина */
+  border: none; /* Без границ */
+  outline: none; /* Без обводки при фокусе */
+  background-color: transparent; /* Прозрачный фон */
+}
+
+.LogIn_inp::placeholder {
+  color: #c7c7c7; /* Цвет плейсхолдера */
+}
+
+.LogIn_inp:focus {
+  border: none; /* Без границ при фокусе */
+}
+
+/* Декоративный разделитель с текстом */
+.login_or {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin: 22px 0 70px;
+}
+
+.login_or_reset {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin: 22px 0 1rem;
+}
+
+.login_or p, .login_or_reset p {
+  color: #737373; /* Цвет текста */
+  font-weight: 500; /* Толщина шрифта */
+  font-size: 13px; /* Размер шрифта */
+}
+
+.login_line {
+  width: 100%; /* Полная ширина */
+  border-bottom: 1px solid #dbdbdb; /* Нижняя граница */
+}
+
+.login_link {
+  text-align: center; /* Центрирование текста */
+  margin-top: 1rem; /* Отступ сверху */
+  padding: 0.3rem 1rem; /* Внутренние отступы */
+}
+
+.login_link:hover {
+  background-color: #f4f4f4; /* Цвет фона при наведении */
+  border-radius: 6px; /* Скругленные углы */
+}
+
+.login_bottom {
+  background-color: #fff; /* Белый фон */
+  border-radius: 3px; /* Скругленные углы */
+  display: flex; /* Flexbox */
+  justify-content: center; /* Центрирование по горизонтали */
+  gap: 5px; /* Расстояние между элементами */
+  padding: 1.2rem; /* Внутренние отступы */
+}
+
+.sign_title {
+  width: 100%;
+  margin-bottom: 2.25rem; /* Отступ снизу */
+}
+
+.sign_title p {
+  color: #737373; /* Цвет текста */
+  text-align: center; /* Центрирование текста */
+}
+
+.sign_text {
+  text-align: center; /* Центрирование текста */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Расположение элементов вертикально */
+  gap: 1rem; /* Расстояние между элементами */
+  margin: 1.62rem 0; /* Отступы сверху и снизу */
+}
+
+.errorText {
+  color: red; /* Красный текст ошибки */
+  font-size: 12px; /* Размер шрифта */
+  margin-top: 4px; /* Отступ сверху */
+}
+
+.reset_null, .reset_null1 {
+  height: 5.25rem; /* Высота блока */
+}
+
+.reset_null1 {
+  height: 2rem;
+  margin-bottom: 1.8rem;
+}
+
+.reset_text {
+  display: flex;
+  flex-direction: column; /* Расположение элементов вертикально */
+  gap: 5px; /* Расстояние между элементами */
+  margin: 8px 0; /* Отступы сверху и снизу */
+}
+
+.languageSwitcher {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 2%; /* Отступ сверху */
+  right: 2%; /* Отступ справа */
+  padding: 3px; /* Внутренние отступы */
+  z-index: 5; /* Порядок наложения */
+}
+
+.languageSwitcher button {
+  background-color: #ffffff; /* Белый фон */
+  border: 1px solid silver; /* Серебристая граница */
+  font-size: 12px; /* Размер шрифта */
+  padding: 3px; /* Внутренние отступы */
+  border-radius: 4px; /* Скругленные углы */
+  color: #737373; /* Цвет текста */
+}
+
+.modalOverlay {
+  position: fixed; /* Фиксированное позиционирование */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+  display: flex; /* Flexbox */
+  align-items: center; /* Центрирование по вертикали */
+  justify-content: center; /* Центрирование по горизонтали */
+  z-index: 1000; /* Порядок наложения */
+}
+
+.modalContent {
+  background: #fff; /* Белый фон */
+  padding: 20px; /* Внутренние отступы */
+  border-radius: 8px; /* Скругленные углы */
+  text-align: center; /* Центрирование текста */
+  max-width: 300px; /* Максимальная ширина */
+  width: 100%; /* Полная ширина */
+}
+
+.closeButton {
+  margin-top: 10px; /* Отступ сверху */
+  padding: 8px 16px; /* Внутренние отступы */
+  background-color: #007bff; /* Синий фон */
+  color: #fff; /* Белый текст */
+  border: none; /* Без границы */
+  border-radius: 4px; /* Скругленные углы */
+  cursor: pointer; /* Курсор в виде руки */
+}
+
+.closeButton:hover {
+  background-color: #0056b3; /* Более темный синий при наведении */
+}

@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.postCon {
+  position: fixed;
+  top: 10%;
+  z-index: 5;
+  width: 60%;
+  max-height: 70%;
+  background-color: #fff;
+border-radius: 0.5rem;
+}
+
+.poster {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 6;
+  display: flex;
+  border-radius: 0.8rem;
+  max-height: 600px;
+}
+.posterIMG {
+  width: 55%;
+  height: 100%;
+  max-height: 550px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center;  */
+  overflow: hidden;
+  border-radius: 0.7rem;
+  position: relative;
+}
+.posterIMG img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.posterLeft {
+  width: 45%;
+    padding: 0 1.5rem;   
+}
+.modalOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.658);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+@media (max-width: 430px) {
+  .postCon {
+    position: fixed;
+    top: 4%;
+    z-index: 5;
+    width: 95%;
+    height: 100%;
+    background-color: #fff;
+  border-radius: 0.5rem;
+  }
+  .poster {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8rem;
+max-height: 800px;
+  }
+  .posterIMG {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center;  */
+    overflow: hidden;
+    border-radius: 0.7rem;
+    position: relative;
+  }
+  .posterLeft {
+    width: 100%;
+      padding: 0 1.5rem;   
+  }
+}

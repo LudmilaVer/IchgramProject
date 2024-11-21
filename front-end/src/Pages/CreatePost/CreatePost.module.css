@@ -1,0 +1,176 @@
+.createPost {
+  width: 100%;
+}
+/* .createPostFix {
+
+} */
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.header p {
+  font-weight: bold;
+}
+
+.shareButton {
+  color: #0095f6;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+}
+
+.uploadSection {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #dbdbdb;
+  /* padding: 20px; */
+  color: #8e8e8e;
+  position: relative;
+}
+.uploadSection img {
+  width: 100%;
+}
+
+.uploadIcon {
+  font-size: 50px;
+  color: #8e8e8e;
+  margin-bottom: 10px;
+}
+.uploadInput {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  width: 100%;  /* Подгоняем под родитель */
+  height: 100%; /* Подгоняем под родитель */
+}
+.detailsSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.emojiButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.footerEnd{
+    height: 200px;
+    border-top: 1px solid var(--border-grey);
+}
+.createPostCenter{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.searchBack {
+  width: 100%;
+  position: absolute;
+   top: 0;
+   left: 20%;
+   /* transform: translateX(-50%); */
+}
+
+@media (max-width: 430px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    max-width: 900px;
+    margin-top: 0;
+    padding: 1rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .uploadSection {
+    width: 100%;
+    height: 40%;
+    border-bottom: 1px solid #dbdbdb;
+    border-right: none;
+padding: 1rem 1rem 3rem;
+    color: #8e8e8e;
+  }
+  .uploadSection img {
+    width: 90%;
+  }
+}

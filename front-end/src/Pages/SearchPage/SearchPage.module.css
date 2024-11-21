@@ -1,0 +1,46 @@
+/*SearchPage.module.css*/
+
+
+.container {
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 4;
+}
+.cont_absolut {
+    /* position: absolute; */
+    display: flex;
+    z-index: 2;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+}
+.searchBack{
+    width: 100%;
+    display: flex;
+}
+
+.fadeIn {
+    opacity: 1;
+}
+
+@media (max-width: 430px) {
+    .container {
+        width: 100%;
+    }
+
+    .cont_absolut {
+        /* position: fixed; */
+        width: 100%;
+        width: 90%;
+        opacity: 1;
+    }
+    .searchBack {
+        /* display: none; */
+    }
+    .fadeIn {
+        opacity: 1;
+        /* position: absolute;
+        left: 0;
+        top: 0; */
+    }
+}

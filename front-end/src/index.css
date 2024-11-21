@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Oldenburg&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: #0077b1; */
+}
+
+:root {
+  --button-color: #0095f6;
+  --border-grey: #dbdbdb;
+  --small-font: 0.87rem;
+  --small-grey: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+.p_main {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 20px;
+}
+.p_16Bold {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+.p_14Bold {
+  font-size: var(--small-font);
+  font-weight: 600;
+  line-height: 20px;
+}
+.p_14Bold_black {
+  font-size: var(--small-font);
+  font-weight: 600;
+  line-height: 20px;
+  color: #262626;
+  text-decoration: none;
+}
+.p_12Bold {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 15.5px;
+  text-align: left;
+}
+.p_12_400 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 15.5px;
+  text-align: left;
+}
+.p_punkt {
+  font-size: 12.06px;
+  font-weight: 400;
+  line-height: 15.5px;
+  text-align: left;
+  color: #737373;
+}
+.p_14Small {
+  font-size: var(--small-font);
+  font-weight: 400;
+  line-height: 18px;
+}
+.p_12SmallGrey {
+  font-size: var(--small-grey);
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #737373;
+  text-decoration: none;
+}
+.sign_p {
+  text-align: center;
+}
+.p_14SmallGrey {
+  font-size: var(--small-font);
+  font-weight: 400;
+  line-height: 18px;
+  color: #737373;
+}
+.p_blue {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: #00376b;
+  text-decoration: none;
+}
+.p_14Blue {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  color: #0095f6;
+  text-decoration: none;
+}
+.p_14Blue_left {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #005892;
+  text-decoration: none;
+}
+.p_10_600 {
+font-size: 0.62rem;
+font-weight: 600;
+line-height: 13.56px;
+text-align: center;
+color: grey;
+}
+.p_10_400 {
+font-size: 0.62rem;
+font-weight: 400;
+line-height: 13.56px;
+text-align: center;
+color: grey;
+}
+.p_blue:hover {
+  color: #005cb3;
+}
+.p_placehold {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 18.75px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+.h3_20 {
+  font-size: 1.25rem;
+  color: black;
+}
+.h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.8px;
+  background-color: transparent;
+  border: none;
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(80%);
+    opacity: 1;
+  }
+}
+
+
+.notific {
+  animation: slideInFromLeft 0.3s ease-out forwards;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  max-width: 25rem;
+  height: 100vh;
+  padding: 1.25rem 1.7rem;
+  border-right: 1px solid rgb(228, 228, 228);
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+}
+.notific_btn {
+  border-radius: 50%;
+  margin-right: 14px;
+  border: none;
+}
+.reset_center {
+  text-align: center;
+}
+.buttonAva {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 15.5px;
+  text-align: center;
+  color: var(--button-color);
+  padding: 0 0.75rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #0000008d;
+}
+.cont_up_ava {
+  border: none;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(
+    45deg,
+    #eda04e,
+    #d4714d,
+    #e1576c,
+    #cc2366,
+    #bc1888
+  );
+  display: flex;
+  position: relative;
+}
+.italic {
+  font-style: italic;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 15.5px;
+  text-align: left;
+}
+
+@media (max-width: 430px) {
+  .notific {
+    width: 100%;
+    height: 91%;
+    animation: none;
+  }
+  .back {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    z-index: 1;
+    background-color: #0000008d;
+  }
+}

@@ -1,0 +1,114 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(242, 242, 242);
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 2.3rem;
+    border-radius: 6px;
+    box-shadow: 8px 6px 10px rgb(241, 241, 241);
+}
+.container:hover {
+    background-color: #f3f3f3;
+}
+.cont_up {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.cont_up_ava {
+    border: none;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(
+    45deg,
+    #eda04e,
+    #d4714d,
+    #e1576c,
+    #cc2366,
+    #bc1888
+  );
+  display: flex;
+  position: relative;
+}
+.cont_up_ava img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.cont_up_text {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.cont_medium {
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  overflow: hidden; /* Обрезает все, что выходит за пределы контейнера */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont_medium img {
+  width: 100%;
+  height: auto; /* Сохраняет соотношение сторон */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Масштабирует изображение, чтобы оно вписывалось в границы */
+}
+
+.cont_down {
+    display: flex;
+    flex-direction: column;
+}
+.down_button{
+    display: flex;
+    gap: 0.8rem;
+    padding: 0.5rem 0;
+}
+.heart {
+  max-width: 29px;
+}
+.heart img {
+  width: 100%;
+}
+.down_button button {
+    background-color: transparent;
+    border: none;
+}
+.down_like p {
+margin-bottom: 6px;
+}
+.down_description {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+.down_description p {
+  flex: 1; 
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  margin: 0;
+}
+.down_description button {
+  background-color: transparent;
+  border: none;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+.down_description button:hover {
+opacity: 0.7;
+}
+.itlic {
+  font-style: italic;
+}

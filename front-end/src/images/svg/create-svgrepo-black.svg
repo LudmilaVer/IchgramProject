@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="24px" height="24px" viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+	.stone_een{fill:#0B1719;}
+</style>
+<path class="stone_een" d="M17,15h3v2h-3v3h-2v-3h-3v-2h3v-3h2V15z M27,10.243V27c0,1.657-1.343,3-3,3H8c-1.657,0-3-1.343-3-3V5
+	c0-1.657,1.343-3,3-3h10.757C19.192,2,19.612,2.102,20,2.279V7c0,1.103,0.897,2,2,2h4.721C26.898,9.388,27,9.808,27,10.243z M21,15
+	c0-0.552-0.448-1-1-1h-2v-2c0-0.552-0.448-1-1-1h-2c-0.552,0-1,0.448-1,1v2h-2c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1h2v2
+	c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-2h2c0.552,0,1-0.448,1-1V15z M22,8h4l-5-5v4C21,7.552,21.448,8,22,8z"/>
+</svg>

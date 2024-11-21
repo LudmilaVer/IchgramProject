@@ -1,0 +1,140 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 5% 20%;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1%  2%;
+  margin-bottom: 2rem;
+  background-color: var(--border-grey);
+  border-radius: 16px;
+}
+
+.profileImage {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileInfo {
+  text-align: left;
+  flex: 1;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: #777;
+}
+
+.newPhotoButton {
+  background-color:  var(--button-color);
+  color: white;
+  border: none;
+  padding: 0.4rem 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.87rem;
+  font-weight: 600;
+}
+.newPhotoButton:hover {
+    opacity: 0.8;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.formInp{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.label {
+  text-align: left;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.875rem;
+  border: 1px solid var(--border-grey);
+  border-radius: 6px;
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #007bff;
+}
+
+.textarea {
+  height: 80px;
+  resize: none;
+}
+
+.charCount {
+  font-size: 0.75rem;
+  color: #666;
+  text-align: right;
+}
+
+.saveButton {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+}
+.saveButton:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 430px) {
+  .container {
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    padding: 18% 8% 5%;
+    text-align: center;
+  }
+  .profileImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .description {
+    font-size: 0.875rem;
+    color: #777;
+  }
+  
+}
